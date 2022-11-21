@@ -1,5 +1,12 @@
 import Board from './classes/Board.js';
 import Task from './classes/Task.js';
+const tasksPersonal = [
+  new Task(1, "tarefa 1", false),
+  new Task(2, "tarefa 2", false),
+  new Task(3, "tarefa 3", true),
+  new Task(4, "tarefa 4", false),
+  new Task(5, "tarefa 5", true)
+];
 function onDuplicateBoard(board) {
   const boardsContainer = document.querySelector(".boards");
   const newBoard = structuredClone(board);
