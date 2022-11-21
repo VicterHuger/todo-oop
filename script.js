@@ -1,3 +1,5 @@
+import Board from './classes/Board.js';
+import Task from './classes/Task.js';
 function onDuplicateBoard(board) {
   const boardsContainer = document.querySelector(".boards");
   const newBoard = structuredClone(board);
