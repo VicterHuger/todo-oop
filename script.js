@@ -28,10 +28,7 @@ function onBoardTitleClick(boardId) {
     alert("Insira o novo título!");
     return;
   }
-
-  const boardTitleElement = document.querySelector(
-    `.board-${boardId} .board-title`
-  );
+  const boardTitleElement = document.querySelector(`[data-board-id="${boardId}"]`).querySelector('.board-title');
   boardTitleElement.textContent = newTitle;
 }
 
