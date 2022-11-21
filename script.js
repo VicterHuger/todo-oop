@@ -7,6 +7,9 @@ const tasksPersonal = [
   new Task(4, "tarefa 4", false),
   new Task(5, "tarefa 5", true)
 ];
+
+const boardPessoal = new Board(1, "Title", tasksPersonal);
+
 function onDuplicateBoard(board) {
   const boardsContainer = document.querySelector(".boards");
   const newBoard = structuredClone(board);
