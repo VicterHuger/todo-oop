@@ -41,11 +41,7 @@ function onDeleteBoard(boardId) {
 
 function onAddBoard(newBoardTitle) {
   const lastBoardId = boards[boards.length - 1]?.id || 0;
-  const board = {
-    id: lastBoardId + 1,
-    title: newBoardTitle,
-    tasks: [],
-  };
+  const board = new Board(lastBoardId + 1, newBoardTitle, []);
   boards.push(board);
 
   const boardsContainer = document.querySelector(".boards");
