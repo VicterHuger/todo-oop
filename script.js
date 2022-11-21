@@ -1,5 +1,6 @@
 import Board from './classes/Board.js';
 import Task from './classes/Task.js';
+
 const tasksPersonal = [
   new Task(1, "tarefa 1", false),
   new Task(2, "tarefa 2", false),
@@ -179,18 +180,6 @@ function getBoardView(board) {
 
   return boardContainer;
 }
-
-const boardPessoal = {
-  id: 1,
-  title: "Title",
-  tasks: [
-    { id: 1, name: "tarefa 1", completed: false },
-    { id: 2, name: "tarefa 2", completed: false },
-    { id: 3, name: "tarefa 3", completed: true },
-    { id: 4, name: "tarefa 4", completed: false },
-    { id: 5, name: "tarefa 5", completed: true },
-  ],
-};
 
 let boards = [boardPessoal];
 
